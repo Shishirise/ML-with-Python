@@ -16,7 +16,8 @@ a = pd.read_csv("Iris.csv")
 print(a)
 
 # Display all rows
-print(a.to_string())
+for row in a.values:
+    print(row)
 
 # Display all column names
 print(a.columns)
