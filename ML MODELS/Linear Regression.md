@@ -1,7 +1,7 @@
 
 # 📈 Linear Regression in Python
 
-This project demonstrates how to implement and visualize **Linear Regression** — a basic yet powerful algorithm in Machine Learning used for predicting continuous values.
+Linear regression is a way for a computer to learn the relationship between two things so it can make smart guesses about the future.
 
 ---
 
