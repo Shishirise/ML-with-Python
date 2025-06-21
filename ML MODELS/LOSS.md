@@ -1,4 +1,4 @@
-# Loss and Loss Functions: A Comprehensive Guide
+# Loss and Loss Functions
 
 A **loss function** is a mathematical formula that tells us *how wrong* a machine learning model’s predictions are, compared to the actual, correct values. It is the central driver in training: models adjust their internal parameters to *minimize* this loss.
 
