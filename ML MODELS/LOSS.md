@@ -222,3 +222,86 @@ Gradient Descent is the backbone of training in almost every major machine learn
 - **Self-driving cars**: To train models that detect pedestrians, lanes, and obstacles.
 - **Natural Language Processing**: In applications like machine translation, text summarization, and chatbots.
 
+  #  How to Tune Hyperparameters to Efficiently Train a Linear Model
+
+Training a linear model effectively depends on selecting the right **hyperparameters** — external settings that control how the model learns but are not learned from the data itself.
+
+---
+
+##  What Are Hyperparameters?
+
+Hyperparameters are values set **before training begins**. They influence the training behavior and performance of a machine learning model.
+
+| Hyperparameter         | Description |
+|------------------------|-------------|
+| **Learning Rate (α)**  | Size of steps taken during gradient descent |
+| **Number of Epochs**   | Total number of times the model sees the training data |
+| **Batch Size**         | Number of samples processed before updating weights |
+| **Regularization (L1/L2)** | Penalizes large weights to prevent overfitting |
+
+---
+
+## 🔍 Step-by-Step Hyperparameter Tuning
+
+### 1. Start with a Reasonable Learning Rate
+- Try values like `0.01`, `0.001`, or `0.1`
+- Too high → unstable training  
+- Too low → slow convergence  
+-  You can also use **learning rate schedules** to gradually reduce it.
+
+---
+
+### 2. Tune the Number of Epochs
+- More epochs mean longer training.
+- Too many can lead to **overfitting**.
+-  Use **early stopping** to halt training once the validation loss stops improving.
+
+---
+
+### 3. Experiment with Batch Size
+- Small batch size: fast learning but noisy.
+- Large batch size: smooth learning but needs more memory.
+-  Try values like 32, 64, 128.
+
+---
+
+### 4. Apply Regularization (L1 or L2)
+- **L1 (Lasso)**: encourages sparsity (zero weights)
+- **L2 (Ridge)**: encourages smaller weights
+-  Prevents overfitting by penalizing large coefficients.
+
+---
+
+### 5. Use Cross-Validation for Evaluation
+- Split your data into train/validation sets.
+- Evaluate different hyperparameter settings.
+-  Try **Grid Search** or **Randomized Search**.
+
+---
+
+##  Tools for Hyperparameter Tuning
+
+| Tool | Description |
+|------|-------------|
+| **GridSearchCV** | Exhaustive search over hyperparameter combinations |
+| **RandomizedSearchCV** | Random subset of all possible combinations |
+| **Optuna / Ray Tune** | Efficient and automated tuning tools |
+| **Keras Tuner** | Great for deep learning but also general use |
+
+---
+
+##  Real-Life Example: Logistic Regression (Sklearn)
+
+```python
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import GridSearchCV
+
+param_grid = {
+    'C': [0.1, 1, 10],
+    'penalty': ['l1', 'l2'],
+    'solver': ['liblinear']
+}
+
+model = GridSearchCV(LogisticRegression(), param_grid, cv=5)
+model.fit(X_train, y_train)
+
