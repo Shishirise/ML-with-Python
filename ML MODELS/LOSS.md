@@ -171,7 +171,7 @@ Loss functions define *what success means* for your model. From predicting price
 """
 
 
-##  Questions About Loss – With Answers
+##  Questions
 
 ### **Q1: Where is the loss value shown during training?**
 **A:** 
