@@ -4,7 +4,11 @@
 Logistic Regression is a supervised machine learning algorithm used for classification tasks. Although the word "regression" is in its name, logistic regression is not used to predict continuous values. Instead, it is used to classify inputs into categories, typically two. This makes it a binary classification algorithm.
 
 In logistic regression, the model estimates the probability that a given input belongs to a certain class. If the probability is above a certain threshold (commonly 0.5), the input is classified as one class; otherwise, it is classified as the other.
-
+```
+# Train model with multinomial option
+model = LogisticRegression(multi_class='multinomial', solver='lbfgs', max_iter=200)
+model.fit(X_train, y_train)
+```
 ## Purpose and Importance
 
 Logistic regression is important because it is simple, fast, and interpretable. It works well when the relationship between the input variables (features) and the output variable (label) is linear in the log-odds space. It provides probabilistic outputs, which means it not only classifies data but also gives the confidence of the classification. This makes it useful in applications where understanding uncertainty is important.
