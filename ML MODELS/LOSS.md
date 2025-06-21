@@ -168,7 +168,7 @@ Used in recommendation engines or search systems where the **order matters**.
 ## Summary
 
 Loss functions define *what success means* for your model. From predicting prices to translating languages or diagnosing diseases, selecting the right loss is crucial to guiding the model in the right direction. Understanding both the **theory** and **application** of these losses is key to building reliable ML systems.
-"""
+
 
 
 ##  Questions
