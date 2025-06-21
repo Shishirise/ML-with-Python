@@ -180,12 +180,7 @@ When you train a model using `.fit()` in Keras or `.train()` in PyTorch, the **l
 Epoch 1/5
 100/100 [==============================] - 1s - loss: 0.834 - accuracy: 0.72
 
-yaml
-Always show details
 
-Copy
-
----
 
 ### **Q2: How can I access the loss after training?**
 **A:** 
