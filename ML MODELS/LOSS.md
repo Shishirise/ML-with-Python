@@ -196,6 +196,8 @@ print(history.history['loss'])  # List of loss values for each epoch
 
 Gradient Descent is an essential optimization algorithm in machine learning used to train models by minimizing the loss function. A loss function measures how far off a model’s prediction is from the actual result, and the goal during training is to make that loss as small as possible. Gradient Descent helps do exactly that — it finds the optimal model parameters (like weights and biases) that minimize the loss.
 
+Gradient Descent means “step-by-step improvement” of a model by following the slope (gradient) of the error function — always trying to go downhill (minimize error).
+
 ## How Does It Work?
 
 Imagine you're standing on a hilly landscape blindfolded, and your goal is to reach the lowest point in the valley. You can’t see the terrain, but you can feel the slope under your feet. At each step, you move slightly downhill in the direction where the ground is sloping the most. If you keep taking such steps, you’ll eventually reach the bottom — the lowest point.
