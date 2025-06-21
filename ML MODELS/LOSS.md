@@ -222,6 +222,8 @@ Gradient Descent is the backbone of training in almost every major machine learn
 - **Self-driving cars**: To train models that detect pedestrians, lanes, and obstacles.
 - **Natural Language Processing**: In applications like machine translation, text summarization, and chatbots.
 
+
+
   #  How to Tune Hyperparameters to Efficiently Train a Linear Model
 
 Training a linear model effectively depends on selecting the right **hyperparameters** — external settings that control how the model learns but are not learned from the data itself.
