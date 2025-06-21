@@ -188,3 +188,35 @@ Use the `history` object returned by `model.fit()`:
 ```python
 history = model.fit(X_train, y_train, epochs=10)
 print(history.history['loss'])  # List of loss values for each epoch
+
+
+#  Gradient Descent in Machine Learning
+
+## What is Gradient Descent?
+
+Gradient Descent is an essential optimization algorithm in machine learning used to train models by minimizing the loss function. A loss function measures how far off a model’s prediction is from the actual result, and the goal during training is to make that loss as small as possible. Gradient Descent helps do exactly that — it finds the optimal model parameters (like weights and biases) that minimize the loss.
+
+## How Does It Work?
+
+Imagine you're standing on a hilly landscape blindfolded, and your goal is to reach the lowest point in the valley. You can’t see the terrain, but you can feel the slope under your feet. At each step, you move slightly downhill in the direction where the ground is sloping the most. If you keep taking such steps, you’ll eventually reach the bottom — the lowest point.
+
+This is exactly what Gradient Descent does for machine learning models. It starts with random values for the model parameters and calculates how much the loss function would increase or decrease if the parameters are changed slightly. This calculation is known as the **gradient** — essentially the slope of the loss function. Then, the model takes a small step in the opposite direction of that slope to reduce the error. These steps are repeated over and over, adjusting the parameters gradually until the loss is minimized.
+
+## The Role of the Learning Rate
+
+The size of each step taken in the direction of the gradient is determined by a parameter called the **learning rate**. If the learning rate is too small, the algorithm takes tiny steps and takes a long time to reach the minimum. If it’s too large, it might overshoot the minimum and never settle down, or even make the model worse. Choosing the right learning rate is critical for successful model training.
+
+## Real-Life Example
+
+Let’s say you’re building a system to predict house prices. Initially, your model guesses a price that’s very different from the actual sale price. Gradient Descent looks at the difference (the loss), calculates how to adjust the internal weights in the model (like how much importance to give to number of rooms, location, size, etc.), and tweaks those weights to make the next prediction better. Over time, the model becomes very good at predicting accurate prices because it continuously reduces the loss through gradient updates.
+
+## Applications in Real Life
+
+Gradient Descent is the backbone of training in almost every major machine learning and deep learning system. It is used in:
+
+- **Finance**: To optimize models predicting stock movements or credit risk.
+- **Healthcare**: For training models that detect diseases from medical images or lab results.
+- **E-commerce**: To improve recommendation engines that suggest products.
+- **Self-driving cars**: To train models that detect pedestrians, lanes, and obstacles.
+- **Natural Language Processing**: In applications like machine translation, text summarization, and chatbots.
+
