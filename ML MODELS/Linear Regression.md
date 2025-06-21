@@ -1,8 +1,6 @@
 # Linear Regression
 
-Linear Regression is one of the simplest and most widely used techniques in statistics and machine learning. This guide will walk you through everything you need to know about it—from the concept and math to its real-world applications and implementation.
-
----
+Linear Regression is one of the simplest and most widely used techniques in statistics and machine learning. 
 
 ## What is Linear Regression?
 
