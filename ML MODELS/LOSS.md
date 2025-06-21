@@ -190,7 +190,7 @@ history = model.fit(X_train, y_train, epochs=10)
 print(history.history['loss'])  # List of loss values for each epoch
 ```
 
-#  Gradient Descent in Machine Learning
+##  Gradient Descent in Machine Learning
 
 ## What is Gradient Descent?
 
