@@ -169,3 +169,27 @@ Used in recommendation engines or search systems where the **order matters**.
 
 Loss functions define *what success means* for your model. From predicting prices to translating languages or diagnosing diseases, selecting the right loss is crucial to guiding the model in the right direction. Understanding both the **theory** and **application** of these losses is key to building reliable ML systems.
 """
+
+
+##  Questions About Loss – With Answers
+
+### **Q1: Where is the loss value shown during training?**
+**A:** 
+When you train a model using `.fit()` in Keras or `.train()` in PyTorch, the **loss is printed in the console** for each epoch. For example:
+
+Epoch 1/5
+100/100 [==============================] - 1s - loss: 0.834 - accuracy: 0.72
+
+yaml
+Always show details
+
+Copy
+
+---
+
+### **Q2: How can I access the loss after training?**
+**A:** 
+Use the `history` object returned by `model.fit()`:
+```python
+history = model.fit(X_train, y_train, epochs=10)
+print(history.history['loss'])  # List of loss values for each epoch
