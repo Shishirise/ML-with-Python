@@ -35,8 +35,8 @@ warnings.filterwarnings('ignore')
 tf.get_logger().setLevel(logging.ERROR)
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 ```
-# Prevent clutter in output by hiding warnings and logs.
-
+## Prevent clutter in output by hiding warnings and logs.
+```
 LOAD_TRUNCATED_IMAGES = True: # Avoids crash if an image is incomplete or corrupted.
 ```
 
