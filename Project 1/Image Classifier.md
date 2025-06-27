@@ -70,6 +70,7 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 # This is part of the Pillow (PIL) library. Some images may be partially downloaded or slightly corrupted.
 
 # Setting this to True allows such images to be loaded instead of raising an error, which is especially helpful when working with large datasets where a few images may be damaged.
+
 ```
 
 
