@@ -27,7 +27,7 @@ from PIL import ImageFile
 5.PIL.ImageFile: Allows us to load and validate images
 ```
 
-# Suppress TensorFlow Warnings
+## Suppress TensorFlow Warnings
 
 ```python
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
