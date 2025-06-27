@@ -26,3 +26,17 @@ from PIL import ImageFile
 
 5.PIL.ImageFile: Allows us to load and validate images
 ```
+
+# Suppress TensorFlow Warnings
+
+```python
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+warnings.filterwarnings('ignore')
+tf.get_logger().setLevel(logging.ERROR)
+ImageFile.LOAD_TRUNCATED_IMAGES = True
+Prevent clutter in output by hiding warnings and logs.
+
+LOAD_TRUNCATED_IMAGES = True: Avoids crash if an image is incomplete or corrupted.
+```
+
+
