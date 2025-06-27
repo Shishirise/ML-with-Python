@@ -16,12 +16,12 @@ import warnings
 import logging
 from PIL import ImageFile
 ```
-tensorflow: Main ML library for building the CNN.
+1.tensorflow: Main ML library for building the CNN.
 
-matplotlib.pyplot: Used to visualize predictions.
+2.matplotlib.pyplot: Used to visualize predictions.
 
-os, shutil: Help with directory and file handling.
+3.os, shutil: Help with directory and file handling.
 
-warnings, logging: Suppress unnecessary logs.
+4.warnings, logging: Suppress unnecessary logs.
 
-PIL.ImageFile: Allows us to load and validate images
+5.PIL.ImageFile: Allows us to load and validate images
