@@ -38,7 +38,7 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 ## Prevent clutter in output by hiding warnings and logs.
 ```python
 LOAD_TRUNCATED_IMAGES = True: # Avoids crash if an image is incomplete or corrupted.
-```
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 This line tells TensorFlow to suppress logging from its C++ backend.
 
@@ -68,5 +68,6 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 This is part of the Pillow (PIL) library. Some images may be partially downloaded or slightly corrupted.
 
 Setting this to True allows such images to be loaded instead of raising an error, which is especially helpful when working with large datasets where a few images may be damaged.
+```
 
 
