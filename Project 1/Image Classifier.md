@@ -228,12 +228,13 @@ val_ds = tf.keras.utils.image_dataset_from_directory(
     image_size=(150, 150),
     batch_size=32
 )
-```
+
 Same as above, but:
 
 This loads the validation set (the 20% portion).
 
 Same directory, same seed, same image size, and batch size.
+```
 
 ```python
 class_names = train_ds.class_names
