@@ -1,5 +1,5 @@
 
-# Cat vs Dog Classifier using TensorFlow
+# Cat vs Dog image Classifier using TensorFlow
 
 This project demonstrates how to clean a dataset, load images, normalize data, build a Convolutional Neural Network (CNN), train the model, and visualize predictions using TensorFlow.
 
