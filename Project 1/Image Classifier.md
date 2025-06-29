@@ -240,6 +240,41 @@ class_names = train_ds.class_names
 ```
 This line stores the names of the classes (e.g., ["Cat", "Dog"]) based on the subfolder names inside clean_dir.
 
+## Normalize Images
+
+Normalization is the process of scaling data (such as image pixel values or numerical features) to a standard range, often between 0 and 1 or -1 and 1.
+
+
+```python
+normalization_layer = tf.keras.layers.Rescaling(1./255)
+```
+What this does:
+Creates a normalization layer that rescales pixel values.
+
+Original pixel values are in the range [0, 255] (typical for images).
+
+1./255 converts them to [0, 1], which is better for training neural networks.
+
+Helps models train faster and more accurately.
+
+```python
+train_ds = train_ds.map(lambda x, y: (normalization_layer(x), y))
+```
+Applies the normalization layer to every image in the training dataset.
+
+x is the image, y is the label.
+
+The map function modifies each (image, label) pair in the dataset.
+
+Output: same dataset structure, but with rescaled pixel values.
+
+```python
+
+val_ds = val_ds.map(lambda x, y: (normalization_layer(x), y))
+```
+Same thing, but applied to the validation dataset.
+Ensures both training and validation images are on the same scale.
+
 
 
 
