@@ -68,11 +68,13 @@ warnings.filterwarnings('ignore')
 
 # This is useful when you want a cleaner console output and are aware that the warnings are not relevant to your current task.
 
+
 tf.get_logger().setLevel(logging.ERROR)
 
  # TensorFlow has its own logging system at the Python level. This line sets the TensorFlow logger to only display error messages.
 
  # This further reduces console clutter by hiding TensorFlow's info and warning messages during model loading, training, or evaluation.
+
 
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 
