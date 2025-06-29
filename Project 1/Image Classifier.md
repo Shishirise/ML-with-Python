@@ -89,6 +89,103 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 src_dir = 'Source directory/File name'
 clean_dir = 'filtered images will be copied to'
 ```
+# Explanation
+```python
+if not os.path.exists(clean_dir):
+    os.makedirs(clean_dir)
+```
+What this does:
+We check if the folder clean_dir exists on your computer. If it doesn't, we create it.
+This folder will hold all the clean, non-corrupted images we're about to copy.
+
+```python
+
+for class_name in os.listdir(src_dir):
+```
+We go into the main folder where your images are stored (src_dir), and look at every item inside it.
+Each item is expected to be a subfolder, like Cat, Dog, etc.
+
+```python
+
+    class_path = os.path.join(src_dir, class_name)
+```
+We create the full path to that subfolder. For example, if class_name is Cat, then class_path becomes something like /Users/.../Images/Cat.
+
+```python
+
+    if os.path.isdir(class_path):
+```
+We check if the current item is actually a folder (not a file).
+Only folders are useful here, because they contain the image files.
+
+```python
+        clean_class_path = os.path.join(clean_dir, class_name)
+```
+We prepare the matching folder in the clean_dir — for example, /Users/.../Images_clean/Cat.
+
+```python
+
+        os.makedirs(clean_class_path, exist_ok=True)
+```
+We create that matching folder. If it already exists, we skip creating it (no error happens because of exist_ok=True).
+
+```python
+
+        for file in os.listdir(class_path):
+```
+Now we go inside the class folder (like Cat) and look at every file inside it.
+
+```python
+
+            if file.lower().endswith(('.jpg/.JPG/.Jpg')):
+```
+We check if the file is a .jpg image.
+We use .lower() so it catches .JPG, .jpg, .Jpg, etc.
+
+```python
+
+                src_path = os.path.join(class_path, file)
+                dst_path = os.path.join(clean_class_path, file)
+```
+We build the full path to where the image currently is (src_path) and where we want to copy it if it’s valid (dst_path).
+
+```python
+
+                try:
+```
+We now try to read and test if the image is okay.
+
+```python
+
+                    img_bytes = tf.io.read_file(src_path)
+```
+We read the image file as raw bytes — like saying, “grab the contents of the file.”
+
+```python
+
+                    img = tf.image.decode_image(img_bytes)
+```
+We try to decode the image — basically, TensorFlow tries to understand the format (JPG/PNG) and make sure it's a real image.
+
+```python
+                img.numpy()
+```
+This line forces the decoding to happen right away (because TensorFlow can delay operations otherwise).
+If the image is corrupt, this is the line that would crash — unless we catch the error.
+
+```python
+
+                    shutil.copy2(src_path, dst_path)
+```
+If everything worked fine and the image is clean, we copy it to the new clean folder.
+
+```python
+
+                except:
+                    pass
+```
+If anything goes wrong (the image is broken, unreadable, etc.), we just skip it and move on.
+We don’t print an error or stop the program — we quietly ignore the bad file.
 
 
 
