@@ -83,5 +83,12 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 # Setting this to True allows such images to be loaded instead of raising an error, which is especially helpful when working with large datasets where a few images may be damaged.
 ```
 
+## STEP 1: Clean corrupt images
+
+python ```
+src_dir = 'Source directory/File name '
+clean_dir = 'filtered images will be copied to'
+```
+
 
 
