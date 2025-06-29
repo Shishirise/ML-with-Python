@@ -294,13 +294,12 @@ It’s used to make data loading and preprocessing more efficient, especially du
 train_ds = train_ds.cache().prefetch(buffer_size=AUTOTUNE)
 What this does:
 
-".cache():" Stores the dataset in memory after the first epoch.
+.cache(): => Stores the dataset in memory after the first epoch.
 
 So in the next epoch, it doesn't have to read from disk again.
 
-.prefetch():
+.prefetch(): => Starts preparing the next batch of data while the current batch is being used by the model.
 
-Starts preparing the next batch of data while the current batch is being used by the model.
 This overlaps data preprocessing and model execution to reduce training latency.
 ```
 
