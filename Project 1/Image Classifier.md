@@ -40,8 +40,9 @@ LOAD_TRUNCATED_IMAGES = True:
 # TRUNCATED_IMAGES refers to images that are incomplete or not fully loaded
 # Avoids crash if an image is incomplete or corrupted.
 
-
+```python
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
+```
 #This line tells TensorFlow to suppress logging from its C++ backend.
 
 Log levels:
