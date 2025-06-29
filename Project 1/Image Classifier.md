@@ -86,7 +86,7 @@ ImageFile.LOAD_TRUNCATED_IMAGES = True
 ## STEP 1: Clean corrupt images
 
 ```python
-src_dir = 'Source directory/File name '
+src_dir = 'Source directory/File name'
 clean_dir = 'filtered images will be copied to'
 ```
 
