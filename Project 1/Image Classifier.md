@@ -44,7 +44,7 @@ LOAD_TRUNCATED_IMAGES = True:
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 ```
 #This line tells TensorFlow to suppress logging from its C++ backend.
-
+```
 Log levels:
 
 '0': Show all logs (default)
@@ -54,6 +54,7 @@ Log levels:
 '2': Filter out INFO and WARNING messages
 
 '3': Show only ERROR messages
+```
 
 By setting it to '3', only critical error messages will be printed, reducing output clutter during program execution.
 
