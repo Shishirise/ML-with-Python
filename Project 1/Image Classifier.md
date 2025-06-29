@@ -187,5 +187,59 @@ If everything worked fine and the image is clean, we copy it to the new clean fo
 If anything goes wrong (the image is broken, unreadable, etc.), we just skip it and move on.
 We don’t print an error or stop the program — we quietly ignore the bad file.
 
+## STEP 2: Load and Normalize Dataset 
+```
+print(" Loading dataset...")
+```
+This prints a message to let you know that the image loading process is starting.
+
+```python
+train_ds = tf.keras.utils.image_dataset_from_directory(
+    clean_dir,
+    validation_split=0.2,
+    subset="training",
+    seed=123,
+    image_size=(150, 150),
+    batch_size=32
+)
+```
+```
+What this does:
+Loads the cleaned images from the clean_dir folder.
+
+Splits 20% of the data for validation, and uses the remaining 80% for training.
+
+subset="training": This part loads the training portion.
+
+seed=123: Ensures the split is reproducible every time you run the code.
+
+image_size=(150, 150): Resizes all images to 150x150 pixels.
+
+batch_size=32: Loads 32 images at a time during training.
+```
+
+```python
+
+val_ds = tf.keras.utils.image_dataset_from_directory(
+    clean_dir,
+    validation_split=0.2,
+    subset="validation",
+    seed=123,
+    image_size=(150, 150),
+    batch_size=32
+)
+```
+Same as above, but:
+
+This loads the validation set (the 20% portion).
+
+Same directory, same seed, same image size, and batch size.
+
+```python
+class_names = train_ds.class_names
+```
+This line stores the names of the classes (e.g., ["Cat", "Dog"]) based on the subfolder names inside clean_dir.
+
+
 
 
