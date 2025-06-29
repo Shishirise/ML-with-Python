@@ -293,9 +293,8 @@ It’s used to make data loading and preprocessing more efficient, especially du
 ```python
 train_ds = train_ds.cache().prefetch(buffer_size=AUTOTUNE)
 What this does:
-.cache():
 
-Stores the dataset in memory after the first epoch.
+".cache():" Stores the dataset in memory after the first epoch.
 
 So in the next epoch, it doesn't have to read from disk again.
 
