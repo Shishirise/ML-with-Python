@@ -309,63 +309,46 @@ Does the same caching and prefetching for the validation dataset.
 ```
 
 ## Build the CNN Model
+
 ```python
 model = tf.keras.Sequential([
 This line creates a Sequential model, meaning the layers are added one after another in order.
 
-
-    tf.keras.layers.Input(shape=(150, 150, 3)),
+tf.keras.layers.Input(shape=(150, 150, 3)),
 Defines the input shape of the model:
-
 150x150 pixels (height and width)
-
 3 channels (for RGB images)
 
-
-    tf.keras.layers.Conv2D(32, (3, 3), activation='relu'),
+tf.keras.layers.Conv2D(32, (3, 3), activation='relu'),
 This is the first convolutional layer:
-
 Applies 32 filters of size 3x3 to the input image
-
 Detects small patterns like edges and textures
-
 Uses ReLU activation to introduce non-linearity
 
-
-    tf.keras.layers.MaxPooling2D(2, 2),
+tf.keras.layers.MaxPooling2D(2, 2),
 This is a max pooling layer:
-
 Reduces the size of the feature maps by taking the max value in each 2x2 block
-
 Helps reduce computation and extract dominant features
 
-    tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
-    tf.keras.layers.MaxPooling2D(2, 2),
+tf.keras.layers.Conv2D(64, (3, 3), activation='relu'),
+tf.keras.layers.MaxPooling2D(2, 2),
 Adds a second convolutional layer with 64 filters, followed by another pooling layer.
 These help the model detect more complex features.
 
-
-    tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
-    tf.keras.layers.MaxPooling2D(2, 2),
+tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
+tf.keras.layers.MaxPooling2D(2, 2),
 Third convolutional layer with 128 filters. This layer helps the model learn even deeper features like shapes and structures. Again followed by pooling.
 
-
-    tf.keras.layers.Flatten(),
+tf.keras.layers.Flatten(),
 Flattens the output from the previous layers into a 1D vector so it can be fed into a dense (fully connected) layer.
 
-
-    tf.keras.layers.Dense(128, activation='relu'),
+tf.keras.layers.Dense(128, activation='relu'),
 A fully connected layer with 128 neurons and ReLU activation. This layer helps the model learn complex patterns from the flattened features.
 
-
-    tf.keras.layers.Dense(1, activation='sigmoid')
-])
+tf.keras.layers.Dense(1, activation='sigmoid')])
 The final output layer:
-
 Only 1 neuron with a sigmoid activation
-
 Outputs a value between 0 and 1
-
 Perfect for binary classification (e.g., Cat vs Dog)
 ```
 
