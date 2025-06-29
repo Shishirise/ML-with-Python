@@ -36,9 +36,12 @@ tf.get_logger().setLevel(logging.ERROR)
 ImageFile.LOAD_TRUNCATED_IMAGES = True
 ```
 ## Prevent clutter in output by hiding warnings and logs.
+```python
 LOAD_TRUNCATED_IMAGES = True:
+
 # TRUNCATED_IMAGES refers to images that are incomplete or not fully loaded
 # Avoids crash if an image is incomplete or corrupted.
+```
 
 ```python
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
