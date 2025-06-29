@@ -202,8 +202,7 @@ train_ds = tf.keras.utils.image_dataset_from_directory(
     image_size=(150, 150),
     batch_size=32
 )
-```
-```
+
 What this does:
 Loads the cleaned images from the clean_dir folder.
 
