@@ -278,6 +278,34 @@ Same thing, but applied to the validation dataset.
 Ensures both training and validation images are on the same scale.
 ```
 
+## Prefetch for performance
 
+Prefetching is a technique that allows the system to prepare the next batch of data while the current batch is being processed by the model.
 
+```python
+AUTOTUNE = tf.data.AUTOTUNE
 
+What it does:
+AUTOTUNE is a TensorFlow setting that lets the system automatically determine the optimal prefetch buffer size.
+It’s used to make data loading and preprocessing more efficient, especially during training.
+```
+
+```python
+train_ds = train_ds.cache().prefetch(buffer_size=AUTOTUNE)
+What this does:
+.cache():
+
+Stores the dataset in memory after the first epoch.
+
+So in the next epoch, it doesn't have to read from disk again.
+
+.prefetch():
+
+Starts preparing the next batch of data while the current batch is being used by the model.
+This overlaps data preprocessing and model execution to reduce training latency.
+```
+
+```python
+val_ds = val_ds.cache().prefetch(buffer_size=AUTOTUNE)
+Does the same caching and prefetching for the validation dataset.
+```
