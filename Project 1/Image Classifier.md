@@ -56,6 +56,7 @@ Log levels:
 '3': Show only ERROR messages
 
 By setting it to '3', only critical error messages will be printed, reducing output clutter during program execution.
+```
 
 ```python
 warnings.filterwarnings('ignore')
