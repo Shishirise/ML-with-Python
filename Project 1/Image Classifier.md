@@ -311,6 +311,17 @@ Does the same caching and prefetching for the validation dataset.
 ## Build the CNN Model
 
 ```python
+
+ReLU (Rectified Linear Unit) is an activation function defined as:
+f(x) = max(0, x)
+If the input is positive, ReLU returns the input itself.
+
+The Sigmoid function is an S-shaped curve defined as:
+f(x) = 1 / (1 + e^(-x))
+This transforms any input into a value between 0 and 1.
+
+
+If the input is zero or negative, ReLU returns 0.
 model = tf.keras.Sequential([
 This line creates a Sequential model, meaning the layers are added one after another in order.
 
