@@ -8,7 +8,6 @@ TensorFlow found 24,991 images split into 2 classes (cats and dogs).
 
 80% (19,993 images) are used for training.
 20% (4,998 images) are used for validation.
-Corrupt JPEG Data Warnings
 
 Corrupt JPEG data: ### extraneous bytes before marker 0xd9
 Warning: unknown JFIF revision number 0.00
