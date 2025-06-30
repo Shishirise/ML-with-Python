@@ -93,6 +93,5 @@ Each image shows:
 
 - **Sample prediction accuracy**: ~77.8%, which closely matches the validation accuracy of ~81%.
 - With further training or improvements like data augmentation, I believe the model could reduce such misclassifications.
-"""
 
 
