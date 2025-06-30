@@ -399,6 +399,59 @@ epochs=1: Number of times the model sees the entire training dataset.(OPTIMAL)
 The result, history, stores training metrics like loss and accuracy so you can plot them later if needed.
 ```
 
+## Step 5: Show Predictions
+```python
+for images, labels in val_ds.take(1):
+This grabs 1 batch (not 1 image) from the validation dataset (val_ds).
+images: a batch of images (e.g., 32 if batch_size=32)
+labels: the corresponding true class labels
+
+predictions = model.predict(images)
+
+This runs the model on the batch of images and gets predictions.
+Since the output layer uses a sigmoid, it returns values between 0 and 1.
+
+predictions = (predictions > 0.5).astype("int32")
+This converts probabilities into class labels:
+If the predicted value is greater than 0.5, it's class 1.
+If less than or equal to 0.5, it's class 0.
+
+
+plt.figure(figsize=(12, 12))
+Creates a new figure with a large size for better visualization.
+
+
+for i in range(9):
+ax = plt.subplot(3, 3, i + 1)
+Loops through the first 9 images in the batch and arranges them in a 3x3 grid.
+
+
+plt.imshow((images[i].numpy() * 255).astype("uint8"))
+The image was normalized earlier to [0, 1], so we multiply by 255 to bring it back to [0, 255] for display.
+
+astype("uint8") ensures it looks like a regular image.
+
+
+true_label = class_names[labels[i]]
+predicted_label = class_names[predictions[i][0]]
+Looks up the true label and the predicted label based on index values.
+This uses class_names (e.g., ["Cat", "Dog"]) that you got earlier from train_ds.class_names.
+
+
+plt.title(f"True: {true_label}\\nPred: {predicted_label}")
+plt.axis("off")
+Sets the title of the image with the true and predicted class names.
+Hides the x/y axes.
+
+
+plt.tight_layout()
+plt.show()
+tight_layout() adjusts spacing to prevent overlap.
+
+show() displays the full 3x3 grid of predictions.
+
+
+
 
 
 
