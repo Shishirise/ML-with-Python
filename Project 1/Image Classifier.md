@@ -361,5 +361,46 @@ Only 1 neuron with a sigmoid activation
 Outputs a value between 0 and 1
 Perfect for binary classification (e.g., Cat vs Dog)
 ```
+## Step 4: Compile and Train
+```python
+model.compile(
+    optimizer='adam',
+    loss='binary_crossentropy',
+    metrics=['accuracy']
+)
+
+model.compile(...)
+This configures the model for training. You're telling TensorFlow how to learn.
+
+optimizer='adam'
+Adam is an advanced optimizer that adjusts the learning rate automatically.
+It combines the best parts of SGD(Stochastic Gradient Descent) and (Root Mean Square Propagation)RMSProp.
+It helps the model learn faster and more accurately.
+
+loss='binary_crossentropy'
+This is the loss function for binary classification (e.g., Cat vs Dog).
+It measures how far the model's predictions are from the actual labels (0 or 1).
+
+metrics=['accuracy']
+Tells TensorFlow to report accuracy (percentage of correct predictions) during training and evaluation.
+
+history = model.fit(
+    train_ds,
+    validation_data=val_ds,
+    epochs=1
+)
+
+model.fit(...) is the main function to train the model.
+train_ds: The training dataset (80% of the data).
+validation_data=val_ds: Data used to check how well the model performs on unseen data (20%).
+epochs=1: Number of times the model sees the entire training dataset.
+(You’d usually set this to a higher number like 10 or 20 in real training.)
+
+The result, history, stores training metrics like loss and accuracy so you can plot them later if needed.
+```
+
+
+
+
 
 
