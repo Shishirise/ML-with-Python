@@ -62,7 +62,7 @@ Slight further improvement. Both training and validation accuracy are over 80%. 
 
 
 
-## Sample Prediction Results
+# Sample Prediction Results
 
 ### 🔗 Source:  
 ![Prediction Results](https://github.com/Shishirise/ML-with-Python/blob/main/Project%201/Results/image.jpg?raw=true)  
@@ -70,7 +70,7 @@ Slight further improvement. Both training and validation accuracy are over 80%. 
 
 ---
 
-### 📊 Evaluation of Model Predictions
+## 📊 Evaluation of Model Predictions
 
 Each image shows:
 - **True label**: the actual category (Cat or Dog)
