@@ -73,7 +73,7 @@ Slight further improvement. Both training and validation accuracy are over 80%. 
 
 ---
 
-## 📊 Evaluation of Model Predictions
+##  Evaluation of Model Predictions
 
 Each image shows:
 - **True label**: the actual category (Cat or Dog)
