@@ -2,8 +2,10 @@
 ## Findings and Results
 
 Found 24991 files belonging to 2 classes.
+
 Using 19993 files for training.
 Using 4998 files for validation.
+
 TensorFlow found 24,991 images split into 2 classes (cats and dogs).
 
 80% (19,993 images) are used for training.
