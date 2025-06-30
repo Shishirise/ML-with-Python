@@ -60,3 +60,39 @@ Validation Loss: 0.4070
 
 Slight further improvement. Both training and validation accuracy are over 80%. Loss is also lower.
 
+
+
+## Sample Prediction Results
+
+### 🔗 Source:  
+![Prediction Results](https://github.com/Shishirise/ML-with-Python/blob/main/Project%201/Results/image.jpg?raw=true)  
+Image source: [GitHub Repository](https://github.com/Shishirise/ML-with-Python/blob/main/Project%201/Results/image.jpg)
+
+---
+
+### 📊 Evaluation of Model Predictions
+
+Each image shows:
+- **True label**: the actual category (Cat or Dog)
+- **Predicted label**: the model’s output
+
+### ✅ Correct Predictions (7 out of 9)
+- I correctly predicted **7 images** using the trained model.
+- The model mostly succeeded at distinguishing between cats and dogs, especially when the images were sharp and clear.
+
+### ❌ Misclassifications (2 out of 9)
+- **True: Cat → Pred: Dog**  
+- These were likely misclassified due to:
+  - Blurry or dark lighting
+  - Pet's pose or surroundings causing confusion
+  - Limited training data for similar-looking cats
+
+---
+
+###  Final Thoughts
+
+- **Sample prediction accuracy**: ~77.8%, which closely matches the validation accuracy of ~81%.
+- With further training or improvements like data augmentation, I believe the model could reduce such misclassifications.
+"""
+
+
