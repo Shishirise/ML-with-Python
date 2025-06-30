@@ -13,8 +13,9 @@ Corrupt JPEG data: ### extraneous bytes before marker 0xd9
 Warning: unknown JFIF revision number 0.00
 
 These are non-critical warnings.
-They just mean some images have extra or unusual bytes but are still readable thanks to ImageFile.LOAD_TRUNCATED_IMAGES = True.
-No need to worry — your training continues normally.
+They just mean some images have extra or unusual bytes but are still readable thanks to ImageFile.
+LOAD_TRUNCATED_IMAGES = True.
+Training continues normally.
 
 # Training Progress
 
