@@ -393,7 +393,7 @@ history = model.fit(
 model.fit(...) is the main function to train the model.
 train_ds: The training dataset (80% of the data).
 validation_data=val_ds: Data used to check how well the model performs on unseen data (20%).
-epochs=1: Number of times the model sees the entire training dataset.
+epochs=1: Number of times the model sees the entire training dataset.(OPTIMAL)
 (You’d usually set this to a higher number like 10 or 20 in real training.)
 
 The result, history, stores training metrics like loss and accuracy so you can plot them later if needed.
