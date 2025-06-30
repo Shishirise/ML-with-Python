@@ -66,7 +66,7 @@ Slight further improvement. Both training and validation accuracy are over 80%. 
 
 ### 🔗 Source:  
 ![Prediction Results](https://github.com/Shishirise/ML-with-Python/blob/main/Project%201/Results/image.jpg?raw=true)  
-Image source: [GitHub Repository](https://github.com/Shishirise/ML-with-Python/blob/main/Project%201/Results/image.jpg)
+
 
 ---
 
