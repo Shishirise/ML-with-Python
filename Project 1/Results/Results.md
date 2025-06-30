@@ -77,7 +77,7 @@ Each image shows:
 - **Predicted label**: the model’s output
 
 ### ✅ Correct Predictions (7 out of 9)
-- I correctly predicted **7 images** using the trained model.
+- Correctly predicted **7 images** using the trained model.
 - The model mostly succeeded at distinguishing between cats and dogs, especially when the images were sharp and clear.
 
 ### ❌ Misclassifications (2 out of 9)
