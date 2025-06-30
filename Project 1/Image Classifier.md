@@ -402,6 +402,7 @@ The result, history, stores training metrics like loss and accuracy so you can p
 ## Step 5: Show Predictions
 ```python
 for images, labels in val_ds.take(1):
+
 This grabs 1 batch (not 1 image) from the validation dataset (val_ds).
 images: a batch of images (e.g., 32 if batch_size=32)
 labels: the corresponding true class labels
