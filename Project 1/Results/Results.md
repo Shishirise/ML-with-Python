@@ -21,25 +21,42 @@ Training continues normally.
 # Training Progress
 
 # Epoch 1/3
+
 Training started and progressed over 625 steps (batches).
+
 Initial accuracy: ~52% (model is just beginning to learn)
+
 Final accuracy for Epoch 1: 0.5859
+
 Loss: 0.6877
+
 Validation Accuracy: 0.7635
+
 Validation Loss: 0.4907
+
 The model performs better on validation than training(not overfitting yet).
 
 # Epoch 2/3
+
 Training Accuracy: 0.7583
+
 Training Loss: 0.4941
+
 Validation Accuracy: 0.8039
+
 Validation Loss: 0.4233
+
 The model improved significantly. Validation accuracy is over 80%.
 
 # Epoch 3/3
+
 Training Accuracy: 0.8079
+
 Training Loss: 0.4088
+
 Validation Accuracy: 0.8171
+
 Validation Loss: 0.4070
+
 Slight further improvement. Both training and validation accuracy are over 80%. Loss is also lower.
 
