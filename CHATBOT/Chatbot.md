@@ -19,3 +19,24 @@ Utilizes Google Generative AI (Gemini Pro)
 Processes user inputs and returns intelligent, natural language responses
 Works like a lightweight ChatGPT clone
 ```
+## Frontend
+I developed a responsive and clean frontend interface for a Personal AI Chatbot using HTML, CSS, and JavaScript. This interface allows users to type and send messages and receive AI responses in a smooth and engaging chat window.
+
+#  Key Components:
+ ```
+HTML:
+
+Structured layout with a chat container, message display area, and input form.
+Simple and semantic markup for easy integration with the backend.
+
+CSS:
+
+Custom styling using internal <style> tags.
+Light theme with white background, pale blue buttons, and rounded corners.
+Designed for clarity and readability with proper spacing, scrollable message box, and modern feel.
+
+JavaScript:
+
+Handles message sending, receiving responses via fetch() to the Flask API.
+Displays user and bot messages dynamically.
+Smooth auto-scroll and input field behavior (Enter key support + send button).
