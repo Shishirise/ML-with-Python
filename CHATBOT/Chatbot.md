@@ -19,6 +19,13 @@ Utilizes Google Generative AI (Gemini Pro)
 Processes user inputs and returns intelligent, natural language responses
 Works like a lightweight ChatGPT clone
 ```
+or  
+```
+use terminal commands like:
+curl -X POST http://127.0.0.1:5000/chat \
+  -H "Content-Type: application/json" \
+  -d '{"message": "What is AI?"}'
+```
 ## Frontend
 I developed a responsive and clean frontend interface for a Personal AI Chatbot using HTML, CSS, and JavaScript. This interface allows users to type and send messages and receive AI responses in a smooth and engaging chat window.
 
