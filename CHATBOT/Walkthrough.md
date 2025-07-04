@@ -105,7 +105,7 @@ return jsonify({"reply": " Server error: " + str(e)})
 ```
 If anything goes wrong (like a network error or bad input), it will catch the error and return a user-friendly message with the error details.
 
-#Running the App
+# Running the App
 ```python
 
 if __name__ == '__main__':
