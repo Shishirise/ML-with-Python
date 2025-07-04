@@ -41,7 +41,7 @@ Smooth auto-scroll and input field behavior (Enter key support + send button).
 
 ## Backend
 I built the backend of a personal AI chatbot using Python Flask and integrated it with Google’s Gemini API (Generative AI) to generate intelligent and natural-sounding responses.
-
+```
 # Technology Stack:
 Flask (Python): Lightweight web framework to handle HTTP requests and render the chatbot interface.
 
