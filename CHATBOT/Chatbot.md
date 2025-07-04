@@ -37,3 +37,39 @@ JavaScript:
 Handles message sending, receiving responses via fetch() to the Flask API.
 Displays user and bot messages dynamically.
 Smooth auto-scroll and input field behavior (Enter key support + send button).
+```
+
+## Backend
+I built the backend of a personal AI chatbot using Python Flask and integrated it with Google’s Gemini API (Generative AI) to generate intelligent and natural-sounding responses.
+
+# Technology Stack:
+Flask (Python): Lightweight web framework to handle HTTP requests and render the chatbot interface.
+Google Generative AI SDK (google-generativeai): Used to interact with the Gemini Pro language model.
+
+ # Main Backend Features:
+ ```
+Flask Web Server:
+
+@app.route("/") renders the main HTML chat page.
+@app.route("/chat", methods=["POST"]) handles AJAX POST requests from the frontend.
+
+```
+Gemini Integration:
+Configured with your personal Gemini API key using genai.configure(api_key="YOUR_KEY").
+Generates responses to user messages using:
+
+```python
+model = genai.GenerativeModel("gemini-pro")
+response = model.generate_content(user_message)
+````
+```
+JSON Communication:
+
+Frontend sends a JSON message to /chat
+Flask processes it and returns a JSON response with the AI reply
+
+Security Note:
+The API key is kept server-side for protection and not exposed to the client/browser.
+```
+
+
