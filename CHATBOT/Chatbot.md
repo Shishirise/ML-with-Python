@@ -44,6 +44,7 @@ I built the backend of a personal AI chatbot using Python Flask and integrated i
 
 # Technology Stack:
 Flask (Python): Lightweight web framework to handle HTTP requests and render the chatbot interface.
+
 Google Generative AI SDK (google-generativeai): Used to interact with the Gemini Pro language model.
 
  # Main Backend Features:
