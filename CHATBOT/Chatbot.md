@@ -77,11 +77,14 @@ The API key is kept server-side for protection and not exposed to the client/bro
 In this chatbot project, I integrated Google’s Gemini AI (Generative AI) into the Flask backend to enable real-time, intelligent, and conversational responses.
 
 ## Communication flow 
-
+```
 User types ➜ Frontend sends request to Flask ➜
 Flask passes message to Gemini ➜
 Gemini generates a reply ➜ Flask sends reply back ➜
 Frontend displays it
+```
+## Why Gemini?
+I built a personal AI chatbot using Flask and connected it to Gemini, Google’s AI model. I chose Gemini because it offers a free API, which is perfect for small projects. It was easy to set up with Python, and I didn’t need a credit card to get started. While OpenAI is great too, their API usually requires payment. Gemini’s free tier gave me just enough power to build and test my bot smoothly.
 
 
 
