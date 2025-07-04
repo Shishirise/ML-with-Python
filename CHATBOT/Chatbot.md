@@ -5,7 +5,7 @@ I have created a personal AI chatbot using Python Flask for the backend and Gemi
 # Key Features:
 ```
 Frontend:
-Built with HTML, CSS and JavaScript
+Built with HTML, CSS and JavaScript(using open AI)
 Responsive layout with input field and styled chat window
 Users can type messages and receive real time AI replies
 
