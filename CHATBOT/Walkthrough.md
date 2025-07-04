@@ -6,8 +6,11 @@ from flask import Flask, request, jsonify, render_template
 We're importing Flask and some of its functions:
 
 Flask – to create the web app.
+
 request – to receive data from the client (like messages).
+
 jsonify – to send JSON responses back.
+
 render_template – to load your HTML file (chatbot.html).
 
 ```python
