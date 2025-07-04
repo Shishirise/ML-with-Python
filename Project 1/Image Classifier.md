@@ -462,7 +462,8 @@ To train the model, I compiled it with the Adam optimizer and binary cross-entro
 
 Finally, I visualized the model's predictions on a few validation images. This helped me go beyond accuracy numbers and see how well the model understood the data. It’s a helpful step to validate results and identify any misclassifications. 
 
- 
+ CREDIT 
+ OPEN AI
 
 
 
