@@ -15,8 +15,9 @@ render_template – to load your HTML file (chatbot.html).
 
 ```python
 import google.generativeai as genai
-This imports Google’s Gemini API (Generative AI tools). You'll use it to generate responses.
 ```
+This imports Google’s Gemini API (Generative AI tools). You'll use it to generate responses.
+
 
 ```python
 from flask_cors import CORS
