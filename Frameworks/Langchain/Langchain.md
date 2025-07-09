@@ -85,3 +85,7 @@ ConversationBufferWindowMemory	    Only the last N messages
 VectorStoreRetrieverMemory        	Stores past data in a vector DB
 ReadOnlySharedMemory	              Read-only view of another memory
 ```
+
+```python
+from langchain.memory import ConversationBufferMemory
+```
