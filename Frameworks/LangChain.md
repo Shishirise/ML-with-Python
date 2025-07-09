@@ -15,8 +15,8 @@ Build smart agents that take actions
 ```
 # What exactly is LLMChain? How is it built, how is it connected to models, and how does it actually work behind the scenes?
 ```
- 1. What Is LLMChain?
-    LLMChain is a LangChain class that connects:
+1. What Is LLMChain?
+LLMChain is a LangChain class that connects:
 
 A PromptTemplate → the text the model will see
 
