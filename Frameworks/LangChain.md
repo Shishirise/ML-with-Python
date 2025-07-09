@@ -14,8 +14,9 @@ Add memory to chatbots
 Build smart agents that take actions
 ```
 # What exactly is LLMChain? How is it built, how is it connected to models, and how does it actually work behind the scenes?
+
+# 1. What Is LLMChain?
 ```
-1. What Is LLMChain?
 LLMChain is a LangChain class that connects:
 
 A PromptTemplate → the text the model will see
@@ -31,10 +32,8 @@ inputs → [PromptTemplate] → [LLM] → output
 
 
 
-2.How LLMChain Works (Internally)
-
-Here’s the flow:
-
+# 2.How LLMChain Works (Internally)
+```
 You define a prompt template:
 
 ```python
