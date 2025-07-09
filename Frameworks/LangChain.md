@@ -29,3 +29,39 @@ It acts like a pipeline:
 inputs → [PromptTemplate] → [LLM] → output
 
 ```
+
+```
+2.How LLMChain Works (Internally)
+Here’s the flow:
+
+You define a prompt template:
+
+```python
+PromptTemplate(input_variables=["name"], template="Tell me about {name}")
+```
+You connect it to an LLM (GPT, Claude, etc.):
+
+```python
+
+llm = OpenAI()
+```
+You pass both into an LLMChain:
+
+```python
+
+chain = LLMChain(prompt=prompt, llm=llm)
+```
+You run it like a function:
+
+```python
+
+output = chain.run(name="Einstein")
+```
+Internally:
+
+Fills the prompt: "Tell me about Einstein"
+
+Sends it to the model using .invoke() or .generate()
+
+Parses and returns the response
+```
