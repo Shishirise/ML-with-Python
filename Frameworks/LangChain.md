@@ -33,10 +33,9 @@ inputs → [PromptTemplate] → [LLM] → output
 
 
 # 2.How LLMChain Works (Internally)
-```
-You define a prompt template:
 
 ```python
+Define templates
 
 PromptTemplate(input_variables=["name"], template="Tell me about {name}")
 ```
