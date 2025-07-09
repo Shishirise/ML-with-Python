@@ -89,3 +89,11 @@ ReadOnlySharedMemory	              Read-only view of another memory
 ```python
 from langchain.memory import ConversationBufferMemory
 ```
+# How the memory is stores?
+```
+Serialized text — a plain text chat history inserted into prompts.
+
+JSON-like Python objects — internal lists or dicts tracking messages during runtime.
+
+Vectors (embeddings) — stored externally in vector databases for semantic search (like Pinecone or FAISS).
+```
