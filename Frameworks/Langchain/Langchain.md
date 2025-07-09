@@ -69,3 +69,16 @@ Parses and returns the response
 ```
 ```
 ## MEMORY
+```
+Memory lets an LLM-based app remember past messages, steps, or data across interactions.
+
+LLM can recall what the user said earlier
+Enables chatbots, conversational agents, and long interactions
+
+Types of Memory in LangChain
+Memory Type	What It Stores
+ConversationBufferMemory	Full message history (chat logs)
+ConversationSummaryMemory	GPT-generated summary of history
+ConversationBufferWindowMemory	Only the last N messages
+VectorStoreRetrieverMemory	Stores past data in a vector DB
+ReadOnlySharedMemory	Read-only view of another memory
