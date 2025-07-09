@@ -32,6 +32,7 @@ inputs → [PromptTemplate] → [LLM] → output
 
 ```
 2.How LLMChain Works (Internally)
+
 Here’s the flow:
 
 You define a prompt template:
