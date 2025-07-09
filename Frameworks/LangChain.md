@@ -27,6 +27,7 @@ Optional memory → to remember things (chatbot style)
 It acts like a pipeline:
 
 inputs → [PromptTemplate] → [LLM] → output
+```
 
 
 
