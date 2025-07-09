@@ -77,14 +77,15 @@ Enables chatbots, conversational agents, and long interactions
 ```
 
 # Types of Memory in LangChain
-```
-Memory Type	                           What It Stores
-ConversationBufferMemory	          Full message history (chat logs)
-ConversationSummaryMemory	         GPT-generated summary of history
-ConversationBufferWindowMemory	    Only the last N messages
-VectorStoreRetrieverMemory        	Stores past data in a vector DB
-ReadOnlySharedMemory	              Read-only view of another memory
-```
+
+| Memory Type                  | What It Stores                     |
+|-----------------------------|----------------------------------|
+| ConversationBufferMemory     | Full message history (chat logs) |
+| ConversationSummaryMemory    | GPT-generated summary of history |
+| ConversationBufferWindowMemory | Only the last N messages         |
+| VectorStoreRetrieverMemory   | Stores past data in a vector DB  |
+| ReadOnlySharedMemory         | Read-only view of another memory |
+
 
 ```python
 from langchain.memory import ConversationBufferMemory
