@@ -98,5 +98,7 @@ JSON-like Python objects — internal lists or dicts tracking messages during ru
 
 Vectors (embeddings) — stored externally in vector databases for semantic search (like Pinecone or FAISS).
 ```
-```Chat GPT
+
+```
+Chat GPT
 ```
