@@ -41,7 +41,7 @@ PromptTemplate(input_variables=["name"], template="Tell me about {name}")
 ```
 
 
-You connect it to an LLM (GPT, Claude, etc.):
+You connect it to an LLM (GPT,Gemini, Claude, etc.):
 
 ```python
 
