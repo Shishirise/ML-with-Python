@@ -40,6 +40,7 @@ You define a prompt template:
 ```python
 PromptTemplate(input_variables=["name"], template="Tell me about {name}")
 ```
+
 You connect it to an LLM (GPT, Claude, etc.):
 
 ```python
