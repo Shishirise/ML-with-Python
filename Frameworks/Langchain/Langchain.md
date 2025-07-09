@@ -67,4 +67,5 @@ Sends it to the model using .invoke() or .generate()
 
 Parses and returns the response
 ```
+```
 ## MEMORY
