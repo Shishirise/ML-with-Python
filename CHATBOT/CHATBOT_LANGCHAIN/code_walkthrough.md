@@ -1,7 +1,8 @@
 
 #  LangChain Chatbot using Gemini API – Walkthrough
 
-This guide explains how a simple conversational chatbot works using ML-with-Python/Frameworks/Langchain/Langchain.md.
+
+- [LangChain + Gemini Chatbot Walkthrough](https://github.com/Shishirise/ML-with-Python/blob/main/Frameworks/Langchain/Langchain.md)
 
 ---
 
