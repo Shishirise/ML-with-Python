@@ -9,7 +9,8 @@ API_KEY = "API_KEY
 # Initialize the LLM using the Gemini 2.5 Flash model
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",        # Use a fast and lightweight Gemini model
-    google_api_key=API_KEY          # API key for authentication
+    google_api_key=API_KEY ,       # API key for authentication
+    temperature=0.7                # Randomness
 )
 
 # Create memory to store conversation history (full message history)
