@@ -89,6 +89,7 @@ So our sequence becomes:
  [0.0, 0.5, -0.2],   # is
  [1.0, 0.1,  0.7],   # fun
  [0.3, -0.6, 0.4]]   # !
+
 Distance is small,model knows they are related.
 ```
 
