@@ -1,6 +1,8 @@
-# Defination: In machine learning, especially in natural language processing (NLP), tokenization is the process of breaking text into smaller units called tokens so the computer can work with them more easily.
+# Defination:
+In machine learning, especially in natural language processing (NLP), tokenization is the process of breaking text into smaller units called tokens so the computer can work with them more easily.
 
 What is Tokenization?
+
 A token can be:
 A word ("Machine", "learning")
 A subword ("learn", "ing")
