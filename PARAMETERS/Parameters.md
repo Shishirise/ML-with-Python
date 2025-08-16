@@ -18,14 +18,14 @@ They define how the model makes predictions.
 
 ### Example 1: Linear Regression
 Equation:  
-\[ y = w_1x_1 + w_2x_2 + b \]
+\[ y = w1x1 + w2x2 + b\]
 
 - Parameters: **w1, w2, b**
 - Learned from data.
 
 👉 Example: Predicting house price  
-- \(w_1 = 150\): every extra square foot adds $150  
-- \(w_2 = 10,000\): each bedroom adds $10,000  
+- \(w1 = 150\): every extra square foot adds $150  
+- \(w2 = 10,000\): each bedroom adds $10,000  
 - \(b = 50,000\): baseline price
 
 ---
