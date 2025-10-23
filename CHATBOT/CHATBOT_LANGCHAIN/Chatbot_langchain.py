@@ -4,7 +4,7 @@ from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
 
 # Your Google API Key 
-API_KEY = "API_KEY 
+API_KEY = "API_KEY"
 
 # Initialize the LLM using the Gemini 2.5 Flash model
 llm = ChatGoogleGenerativeAI(
