@@ -28,4 +28,4 @@ def chat_gemini():
         return jsonify({"reply": " Server error: " + str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
